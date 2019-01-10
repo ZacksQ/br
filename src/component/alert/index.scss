@@ -1,0 +1,94 @@
+.Alert {
+  position: fixed;
+  height: 100%;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9;
+
+  &>.title {
+    width: 4.3rem;
+    font-size: 0.34rem;
+    color: #c2c2c2;
+    font-weight: bold;
+
+    span {
+      letter-spacing: 0.1rem;
+    }
+
+    .name {
+      margin-right: 0.17rem;
+      text-shadow: 2px 2px 2px #2c3a60;
+      letter-spacing: 0;
+    }
+  }
+
+  .content {
+    position: relative;
+    width: 4.3rem;
+    border: 0.05rem solid #2c3a60;
+    background: #c2c2c2;
+
+    .wrap-dotted {
+      border: 1px dotted #2c3a60;
+      overflow: auto;
+      -webkit-overflow-scrolling: touch;
+
+      .wrap {
+        padding: 0.18rem;
+      }
+
+    }
+  }
+
+  .introBtn {
+    margin-top: 0.2rem;
+    width: 1.57rem;
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .helpPic {
+    width: 3.61rem;
+  }
+
+  .helpBtn {
+    margin-top: 0.3rem;
+    width: 3.11rem;
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .tip-content {
+    width: 3.61rem;
+    height: 2.56rem;
+    padding: 0.4rem 0.3rem;
+    background: url('./tip-bg.png') center / contain;
+    font-size: 0.24rem;
+    line-height: 1.4;
+    color: #2c3a60;
+    text-align: center;
+
+    .line1 {
+      margin: 0.3rem 0;
+    }
+
+    .tipBtn {
+      margin-top: 0.1rem;
+
+      .tipBtn-wrap {
+        width: 1.27rem;
+        height: 0.6rem;
+        font-size: 0.24rem;
+        color: #d4d4d4;
+        background: url('./tipBtn.png') center / contain;
+      }
+
+    }
+  }
+}

@@ -1,0 +1,148 @@
+@import '~normalize.css/normalize.css';
+
+// rem 单位换算：定为 750 只是方便运算，750px === 7.5rem  原因，谷歌浏览器有最小字体显示12px,所以html的vw不能过于小
+$vw: 750;
+$max_width: 540px;
+$min_width: 320px;
+
+html {
+  font-size: 100vw * 100 / $vw;
+
+  .fixed {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+  }
+
+  // 同时，通过Media Queries 限制根元素最大最小值
+  @media screen and (max-width: 320px) {
+    font-size: $min_width * 100 / $vw;
+
+    .fixed {
+      width: 320px;
+    }
+  }
+
+  @media screen and (min-width: 540px) {
+    font-size: $max_width * 100 / $vw;
+
+    .fixed {
+      width: 540px;
+    }
+  }
+
+  -webkit-tap-highlight-color: transparent;
+  -webkit-overflow-scrolling: touch;
+  user-select: none;
+}
+
+// body 也增加最大最小宽度限制，避免默认100%宽度的 block 元素跟随 body 而过大过小
+body {
+  max-width: 540px;
+  min-width: 320px;
+  margin: 0 auto;
+  font-size: 0.24rem;
+  line-height: 1.4;
+  background: url('./assets/bg.jpg') center / cover;
+
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  button{
+    padding: 0 !important;
+    min-width: auto !important;
+  }
+}
+
+// 公共样式
+.flex-column-start{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.flex-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex-column-center-between {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-column-center-center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+
+.flex-center-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-center-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-center-around {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+}
+
+
+//修改loading
+.cl-Loading-mask{
+  z-index: 99;
+}
+
+.Img-loading{
+  position: fixed;
+  top: 0;
+  height: 100%;
+  font-size: 0.3rem;
+  color: #2c3a60;
+}
+
+.share-mask {
+  height: 100%;
+  top: 0;
+  z-index: 99;
+  background: rgba(0, 0, 0, 0.5);
+
+  img {
+    display: block;
+    width: 5.98rem;
+    margin: 1rem auto 0;
+  }
+}

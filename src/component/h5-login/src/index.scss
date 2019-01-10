@@ -1,0 +1,127 @@
+#cl-h5-login {
+
+  position: fixed;
+  top: 0;
+  width: 7.5rem;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .flex-center {
+    display: flex;
+    align-items: center;
+  }
+
+  input, button {
+    outline: none;
+    border: none;
+    border: none;
+    background: transparent;
+
+    flex: 1;
+
+    width: 1.88rem;
+    font-size: 0.24rem;
+    color: #d4d4d4;
+    padding: 0 0.1rem;
+    line-height: 0.56rem;
+  }
+
+  button{
+    width: 1.38rem;
+  }
+
+  .form-wrap {
+    width: 4.5rem;
+
+    .form-dotted {
+      border: 1px dotted #2c3a60;
+      padding: 0.07rem;
+
+      .form-solid {
+        border: 0.06rem solid #2c3a60;
+
+        .form {
+          padding: 0.25rem 0.25rem 0.15rem;
+          border: 1px dotted #2c3a60;
+          background: #c2c2c2;
+        }
+      }
+    }
+  }
+
+  .box {
+    padding: 0.03rem 0.05rem;
+    border: 0.02rem solid #2c3a60;
+
+    .box-contain {
+      background: #2c3a60;
+    }
+
+    &.red {
+      border: 0.02rem solid #ac4546;
+
+      .box-contain {
+        background: #ac4546;
+      }
+    }
+  }
+
+  .reset {
+    display: inline-block;
+    margin-right: 0.1rem;
+    height: .28rem;
+    width: .28rem;
+    background: url('./input_reset.png') no-repeat 0 0 / 100% 100%;
+  }
+
+  .form-group {
+    margin-top: 0.24rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .refresh {
+    padding: 0.1rem;
+    color: #ac4546;
+    font-size: .22rem;
+  }
+
+  .pic-code {
+    margin-left: .1rem;
+    vertical-align: bottom;
+    height: .6rem;
+  }
+
+  .fomr-line{
+    margin-top: 0.24rem;
+    font-size: 0.16rem;
+    color: #2c3a60;
+    text-align: center;
+  }
+
+  .submit-wrap{
+    margin: 0.36rem auto 0;
+    display: block;
+    width: auto;
+  }
+
+  .clock-disable{
+    color: #949494;
+  }
+
+  .submit{
+    width: 3.11rem;
+    line-height: 0.7rem;
+    text-align: center;
+    font-size: 0.24rem;
+    color: #d4d4d4;
+    background: url('./btn-bg.png') center / cover;
+  }
+
+}

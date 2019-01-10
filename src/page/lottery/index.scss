@@ -1,0 +1,69 @@
+.Lottery {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.75rem;
+    background: url('./ticket.png') center / cover;
+  }
+
+  .lottery-wrap {
+    position: relative;
+    overflow: hidden;
+
+    position: fixed;
+    top: 0;
+    height: 100%;
+
+    img {
+      display: block;
+    }
+
+    .top>img {
+      width: 5.36rem;
+    }
+
+    .mid>img {
+      width: 5.23rem;
+    }
+
+    .btm {
+      position: relative;
+
+      &>img {
+        width: 2.46rem;
+      }
+
+      .sign-btn {
+        position: absolute;
+        left: 50%;
+        bottom: 10%;
+        transform: translateX(-50%);
+
+        img {
+          width: 2.98rem;
+        }
+      }
+
+      .line-wrap {
+        position: absolute;
+        left: 50%;
+        bottom: -6%;
+        transform: translateX(-50%);
+
+        img {
+          width: 6.5rem;
+        }
+      }
+    }
+  }
+
+}
+
+#my-canvas {
+  position: fixed;
+  top: 0;
+}

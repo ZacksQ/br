@@ -1,0 +1,40 @@
+.Download {
+  padding: 1.2rem 0;
+  font-size: 0.24rem;
+  color: #2c3a60;
+
+  .title{
+    font-size: 0.34rem;
+    margin-bottom: 0.12rem;
+  }
+
+  .fs-bold{
+    font-weight: bold;
+  }
+
+  .icon-dwon2 {
+    width: 0.31rem;
+    margin: 0 0.2rem;
+  }
+
+  .icon-dwon {
+    width: 0.36rem;
+  }
+
+  .app {
+    margin: 0.16rem auto 0.4rem;
+    width: 3.84rem;
+  }
+
+  .btn-wrap{
+    margin: 0.56rem 0 0.68rem;
+  }
+
+  .btn {
+    width: 3.11rem;
+    height: 0.7rem;
+    font-size: 0.24rem;
+    color: #d4d4d4;
+    background: url('../../assets/btn-bg.png') center / contain;
+  }
+}

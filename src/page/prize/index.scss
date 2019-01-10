@@ -1,0 +1,114 @@
+.Prize {
+  background: #fff url('../../assets/bg.jpg') center / cover;
+
+  animation: fase-in 0.3s ease-out;
+
+  @keyframes fase-in {
+    from{
+      transform: scale(0.2);
+      opacity: 0;
+    }to{
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  .top {
+    margin-top: 0.2rem;
+
+    &>img {
+      display: block;
+      width: 7.11rem;
+    }
+
+    .prize-border {
+      margin-top: 0.06rem;
+      width: 7.11rem;
+      border: 1px dotted #2c3a60;
+      padding: 0.12rem;
+
+      .prize-wrap {
+        padding: 0.5rem 0.46rem 0;
+        border: 0.06rem solid #2c3a60;
+
+        color: #2c3a60;
+
+        .left {
+          flex: 1;
+          font-size: 0.32rem;
+          position: relative;
+          .title{
+            font-weight: bold;
+          }
+          .prize-name{
+            font-size: 0.3rem;
+            position: absolute;
+            top: 1.4rem;
+            left: 0.56rem;
+            width: 2.6rem;
+            text-align: center;
+            transform: rotate(-20deg);
+            text-shadow: 1px 1px 2px #979fb7;
+            .prize-sponsors{
+              font-size: 0.26rem;
+            }
+          }
+          img{
+            display: block;
+            width: 4.38rem;
+          }
+        }
+
+        .right {
+          position: relative;
+          flex: 1;
+          display: flex;
+          justify-content: flex-end;
+          height: 3rem;
+          padding-left: 0.24rem;
+          border-left: 1px solid #2c3a60;
+          font-size: 0.24rem;
+
+          &::before{
+            content: '';
+            position: absolute;
+            width: 0.21rem;
+            height: 0.25rem;
+            left: -0.5rem;
+            top: 0.1rem;
+            background: url('./icon_arrow.png') no-repeat center / contain;
+          }
+
+          p {
+            font-weight: bold;
+            line-height: 0.48rem;
+            letter-spacing: 0.06rem;
+            height: 4.75rem;
+            writing-mode: vertical-rl;
+          }
+        }
+      }
+    }
+
+  }
+
+  .btm {
+    margin: 0.5rem auto 0.2rem;
+    width: 7.11rem;
+
+    p {
+      width: 3.11rem;
+      height: 0.7rem;
+      font-size: 0.24rem;
+      color: #d4d4d4;
+    }
+
+    .share-btn{
+      background: url('../../assets/btn-bg.png') no-repeat center / contain;
+    }
+
+    .receive-btn{
+      background: url('./receive.png') no-repeat center / contain;
+    }
+  }
+}

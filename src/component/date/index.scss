@@ -1,0 +1,37 @@
+.Date {
+  width: 1.4rem;
+  height: 1.42rem;
+  font-size: 0.24rem;
+  color: #1b2951;
+
+  &.Date-poster {
+    font-size: 0.2rem;
+
+    .year>img {
+      width: 1.06rem;
+    }
+    .day { 
+      width: 1.4rem;
+      text-align: left;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+  }
+
+  .year {
+    line-height: 1.5;
+    border-bottom: 1px solid #1b2951;
+  }
+
+  .day {
+    text-align: center;
+  }
+
+  .week {
+    width: 100%;
+    padding: 0 0.04rem;
+    color: #d4d4d4;
+    line-height: 0.4rem;
+    background: #2c3a60;
+  }
+}
